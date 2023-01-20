@@ -245,7 +245,7 @@ span {
 
 label {
   cursor: pointer;
-  color: #15803d;
+  /* color: #15803d; */
 }
 
 button {
