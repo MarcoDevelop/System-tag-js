@@ -137,7 +137,7 @@
 
   .div4 {
     border: 1px solid black;
-    padding: 1px;
+    padding-bottom: 3rem;
     text-align-last: left;
     padding-top: 3px;
     padding-left: 3px;
@@ -159,14 +159,14 @@
     border: 1px solid black;
     width: 100%;
     border-style: none solid solid solid;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.3rem;
   }
 
   .customer {
     border: 1px solid black;
     width: 100%;
     border-style: none solid solid none;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.3rem;
   }
 
   .client {
@@ -191,7 +191,7 @@
     border: 1px solid black;
     width: 100%;
     border-style: none solid solid solid;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.3rem;
   }
 
   .lotSap>strong {
@@ -203,7 +203,7 @@
     border: 1px solid black;
     width: 100%;
     border-style: none solid solid none;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.3rem;
   }
 
   .opSap>strong {
@@ -245,7 +245,6 @@ span {
 
 label {
   cursor: pointer;
-  /* color: #15803d; */
 }
 
 button {
@@ -335,7 +334,7 @@ button:hover{
 
 .div3 {
   border: 1px solid black;
-  padding: 2px;
+  padding-bottom: 0.3rem;
   text-align-last: left;
   padding-top: 1px;
   padding-left: 3px;
@@ -369,7 +368,7 @@ button:hover{
 
 .div4 {
   border: 1px solid black;
-  padding: 1px;
+  padding-bottom: 0.3rem;
   text-align-last: left;
   padding-top: 3px;
   padding-left: 3px;
@@ -391,14 +390,14 @@ button:hover{
   border: 1px solid black;
   width: 100%;
   border-style: none solid solid solid;
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.3rem;
 }
 
 .customer {
   border: 1px solid black;
   width: 100%;
   border-style: none solid solid none;
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.3rem;
 }
 
 .client {
@@ -423,7 +422,7 @@ button:hover{
   border: 1px solid black;
   width: 100%;
   border-style: none solid solid solid;
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.3rem;
 }
 
 .lotSap>strong {
@@ -435,7 +434,7 @@ button:hover{
   border: 1px solid black;
   width: 100%;
   border-style: none solid solid none;
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.3rem;
 }
 
 .opSap>strong {
