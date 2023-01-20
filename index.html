@@ -11,14 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery-2.0.0b2.js"></script>
   <script type="text/javascript" src="js/JsBarcode.all.min.js"></script>
 
   <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" type="text/css" href="style.css" media="print" />
 
-  <title>Document</title>
+  <link rel="shortcut icon" href="https://static.wixstatic.com/media/289d3f_c2493b3d5671459fab14ba728603bcf7%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/289d3f_c2493b3d5671459fab14ba728603bcf7%7Emv2.png" type="image/png">
+
+  <title>Tag JS</title>
 </head>
 
 <body>
@@ -34,26 +35,26 @@
     </div>
 
     <div class="div1">
-      <label for="name">Producto / Product:</label>
+      <label id="productClick" for="name">Producto / Product:</label>
       <br>
-      <strong>Tech Metal 17 Micras</strong>
+      <strong id="product">Exemplo: Tech Metal 17 Micras</strong>
     </div>
 
     <div class="grid-container">
       <div class="item1">
-        <label>Mill Roll / Mil Roll:</label>
+        <label id="millClick">Mill Roll / Mil Roll:</label>
         <br>
-        <span>0A2206150842</span>
+        <span id="mill">0A2206150842</span>
       </div>
       <div class="item2">
-        <label>Rollo N / Roll N:</label>
+        <label id="rolloClick">Rollo N° / Roll N°:</label>
         <br>
-        <span>AAJVGT-CS1</span>
+        <span id="rollo">AAJVGT-CS1</span>
       </div>
       <div class="item3">
-        <label>Producto / Product:</label>
+        <label id="codProdClick">Producto / Product:</label>
         <br>
-        <span>M ST-17</span>
+        <span id="codProd">M ST-17</span>
       </div>
     </div>
 
@@ -135,10 +136,12 @@
 
   <script>
     //Codigo de barras
-    JsBarcode("#barcodeMaterial", "AAJVGT-CS1", { height: 43, width: 1.43 });
+    JsBarcode("#barcodeMaterial", "AAJVGT-CS1", { height: 50, width: 1.70});
   </script>
 
   <script src="js/functionImprimir.js"></script>
+
+  <script src="js/inputDate.js"></script>
 
 </body>
 

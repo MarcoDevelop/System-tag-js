@@ -58,7 +58,7 @@
     border: 1px solid black;
     text-align-last: left;
     padding-left: 3px;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
     border-style: solid solid none solid;
   }
 
@@ -78,14 +78,14 @@
   .item2 {
     grid-area: main;
     text-align: left;
-    padding: 1px 0px 0.1rem 3px;
+    padding: 1px 0px 0.4rem 3px;
     border-bottom: 1px solid black !important;
   }
 
   .item3 {
     grid-area: footer;
     text-align: left;
-    padding: 1px 0px 0.1rem 3px;
+    padding: 1px 0px 0.4rem 3px;
   }
 
   .grid-container {
@@ -103,7 +103,7 @@
 
   .div3 {
     border: 1px solid black;
-    padding: 2px;
+    padding: 10px;
     text-align-last: left;
     padding-top: 1px;
     padding-left: 3px;
@@ -243,20 +243,38 @@ span {
   text-align: center;
 }
 
+label {
+  cursor: pointer;
+}
+
+button {
+  padding: 0.75rem 2.8rem;
+  color: #f9fafb;
+  font-weight: 700;
+  background: #22c55e;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  line-height: 1.3rem;
+  margin-top: 0.7rem;
+  cursor: pointer;  
+}
+
+button:hover{
+  opacity: 0.7;
+}
+
 .formContainer {
   max-width: 330px;
-  /* margin: 0 auto; */
-
-  /* border: 1px solid #ccc; */
   border-radius: 5px;
-  /* padding: 5px 10px 10px 10px; */
   margin-bottom: 10px;
-  /* margin-top: 30px; */
 }
 
 .logo {
   margin-bottom: 5px;
-  /* margin-top: 5px; */
+  margin-top: 5px;
   padding-right: 1.8rem;
 }
 
@@ -270,7 +288,7 @@ span {
   border: 1px solid black;
   text-align-last: left;
   padding-left: 3px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
   border-style: solid solid none solid;
 }
 
@@ -290,14 +308,14 @@ span {
 .item2 {
   grid-area: main;
   text-align: left;
-  padding: 1px 0px 0.1rem 3px;
+  padding: 1px 0px 0.2rem 3px;
   border-bottom: 1px solid black !important;
 }
 
 .item3 {
   grid-area: footer;
   text-align: left;
-  padding: 1px 0px 0.1rem 3px;
+  padding: 1px 0px 0.2rem 3px;
 }
 
 .grid-container {
