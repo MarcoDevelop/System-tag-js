@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.0.0b2.js"></script>
+  <script type="text/javascript" src="js/JsBarcode.all.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="print" />
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="etiqueta" class="formContainer">
+    <div class="headerContainer">
+      <header>
+        <h3>COUNTRY OF ORIGIN</h3>
+        <h2>ECUADOR</h2>
+      </header>
+
+      <img class="logo" src="assets/logo.png" alt="technofilm" width="100" height="36">
+    </div>
+
+    <div class="div1">
+      <label for="name">Producto / Product:</label>
+      <br>
+      <strong>Tech Metal 17 Micras</strong>
+    </div>
+
+    <div class="grid-container">
+      <div class="item1">
+        <label>Mill Roll / Mil Roll:</label>
+        <br>
+        <span>0A2206150842</span>
+      </div>
+      <div class="item2">
+        <label>Rollo N / Roll N:</label>
+        <br>
+        <span>AAJVGT-CS1</span>
+      </div>
+      <div class="item3">
+        <label>Producto / Product:</label>
+        <br>
+        <span>M ST-17</span>
+      </div>
+    </div>
+
+    <div class="div3">
+      <label for="name">Longitud / Length:</label>
+      <div>
+        <span>21,000.0</span><strong>m /</strong>
+        <span>68,897.6</span><strong>ft</strong>
+      </div>
+    </div>
+
+    <div class="div3">
+      <label for="name">Peso / Weight:</label>
+      <div>
+        <span>303.43</span><strong>kg /</strong>
+        <span>668.95</span><strong>lb</strong>
+      </div>
+    </div>
+
+    <div class="grid-container2">
+      <div class="externalSide">
+        <label>Cara Externa / External Side:</label>
+        <span>Tratada/Treated</span>
+      </div>
+      <div class="internalSide">
+        <label>Cara Interna / Internal Side:</label>
+        <span>None</span>
+      </div>
+    </div>
+
+    <div class="div4">
+      <label for="name">Ancho / Width:</label>
+      <br>
+      <div>
+        <strong>940.0</strong><strong>mm /</strong>
+        <strong>37.0</strong><strong>in</strong>
+      </div>
+    </div>
+
+    <div class="dataCustomer">
+      <div class="data">
+        <label>Fecha/ Date.</label>
+        <br>
+        <span>24.06.2022</span>
+      </div>
+      <div class="customer">
+        <label>Customer Id Reference.</label>
+        <br>
+        <span>2762</span>
+      </div>
+    </div>
+
+    <div class="client">
+      <label for="name">Client / Cliente:</label>
+      <br>
+      <strong>SIGMAPLAST DO BRASIL INDUSTRIA E</strong>
+    </div>
+
+    <div class="sap">
+      <div class="lotSap">
+        <label>Lot SAP:</label>
+        <br>
+        <strong>E000238487</strong>
+      </div>
+      <div class="opSap">
+        <label>OP SAP:</label>
+        <br>
+        <strong>270000005019</strong>
+      </div>
+    </div>
+
+    <div class="barCode">
+      <svg style="text-align:center;" id="barcodeMaterial"></svg>
+    </div>
+
+  </div>
+
+  <button id="btnImp">Imprimir</button>
+
+  <script>
+    //Codigo de barras
+    JsBarcode("#barcodeMaterial", "AAJVGT-CS1", { height: 43, width: 1.43 });
+  </script>
+
+  <script src="js/functionImprimir.js"></script>
+
+</body>
+
+</html>
