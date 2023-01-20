@@ -245,6 +245,7 @@ span {
 
 label {
   cursor: pointer;
+  color: #15803d;
 }
 
 button {
@@ -259,6 +260,7 @@ button {
   transition: 0.4s;
   line-height: 1.3rem;
   margin-top: 0.7rem;
+  margin-left: 0.7rem;
   cursor: pointer;  
 }
 
