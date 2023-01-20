@@ -1,7 +1,7 @@
 const productClick = document.getElementById('productClick')
 
 productClick.addEventListener('click', (evt) => {
-  let product = prompt("Informe o Nome do Produto:")
+  let product = prompt("Informe o Produto:")
   document.querySelector('#product').textContent = product;
 });
 
@@ -19,8 +19,9 @@ millClick.addEventListener('click', (evt) => {
 const rolloClick = document.getElementById('rolloClick')
 
 rolloClick.addEventListener('click', (evt) => {
-  let rollo = prompt("Informe o N° do Mill Rollo:")
+  let rollo = prompt("Informe o N° do Rollo:")
   document.querySelector('#rollo').textContent = rollo.toUpperCase();
+  document.querySelector("text").textContent = rollo.toUpperCase();
 });
 
 //______________________________________________________________
@@ -28,29 +29,105 @@ rolloClick.addEventListener('click', (evt) => {
 const codProdClick = document.getElementById('codProdClick')
 
 codProdClick.addEventListener('click', (evt) => {
-  let codProd = prompt("Informe o N° do Mill Rollo:")
+  let codProd = prompt("Informe código do Produto:")
   document.querySelector('#codProd').textContent = codProd.toUpperCase();
 });
 
 //______________________________________________________________
 
+const lengthClick = document.getElementById('lengthClick')
 
-// let acronymProduct = prompt("Informe a Sigla do Produto, exemplo: (M ST-17)")
-// let millRoll = prompt("Informe o Mill Roll:")
-// let longitud = prompt("Informe a Longitud (Metragem):")
+lengthClick.addEventListener('click', (evt) => {
+  let lengthM = prompt("Informe a metragem:")
+  document.querySelector('#lengthM').textContent = lengthM;
 
-// ft = (longitud * 3.281)
+  let lengthFt= (lengthM * 3.281)
+  document.querySelector('#lengthFt').textContent = lengthFt;
+});
 
-// alert("A Metragem em Pés é: " + ft)
+//______________________________________________________________
 
-// let weight = prompt("Informe o Peso (Kg):")
+const weightClick = document.getElementById('weightClick')
 
-// lb = (weight * 2.205)
+weightClick.addEventListener('click', (evt) => {
+  let weightKg = prompt("Informe o Peso (Kg):")
+  document.querySelector('#weightKg').textContent = weightKg;
 
-// alert("O Peso em Libras é: " + lb)
+  let weightLb= (weightKg * 2.205)
+  document.querySelector('#weightLb').textContent = weightLb;
+});
 
-// let width = prompt("Informe o mm:")
+//______________________________________________________________
 
-// inch = (940.0 / 25.4)
+const externalSideClick = document.getElementById('externalSideClick')
 
-// alert("O tamanho em inch(Polegadas) é: " + Math.round(inch))
+externalSideClick.addEventListener('click', (evt) => {
+  let externalSide = prompt("Informe o tratamento:")
+  document.querySelector('#externalSide').textContent = externalSide;
+});
+
+//______________________________________________________________
+
+const internalSideClick = document.getElementById('internalSideClick')
+
+internalSideClick.addEventListener('click', (evt) => {
+  let internalSide = prompt("Informe o tratamento:")
+  document.querySelector('#internalSide').textContent = internalSide;
+});
+
+//______________________________________________________________
+
+const widthClick = document.getElementById('widthClick')
+
+widthClick.addEventListener('click', (evt) => {
+  let widthMm = prompt("Informe a largura em (mm):")
+  document.querySelector('#widthMm').textContent = widthMm;
+
+  let widthIn= (widthMm / 25.4)
+  document.querySelector('#widthIn').textContent = Math.round(widthIn);
+});
+
+//______________________________________________________________
+
+const dateClick = document.getElementById('dateClick')
+
+dateClick.addEventListener('click', (evt) => {
+  let date = prompt("Informe a data:")
+  document.querySelector('#date').textContent = date;
+});
+
+//______________________________________________________________
+
+const customerIdReferenceClick = document.getElementById('customerIdReferenceClick')
+
+customerIdReferenceClick.addEventListener('click', (evt) => {
+  let customerIdReference = prompt("Informe a data:")
+  document.querySelector('#customerIdReference').textContent = customerIdReference;
+});
+
+//______________________________________________________________
+
+const clientClick = document.getElementById('clientClick')
+
+clientClick.addEventListener('click', (evt) => {
+  let client = prompt("Informe o nome do Cliente:")
+  document.querySelector('#client').textContent = client.toUpperCase();
+});
+
+//______________________________________________________________
+
+const lotSapClick = document.getElementById('lotSapClick')
+
+lotSapClick.addEventListener('click', (evt) => {
+  let lotSap = prompt("Informe o Lote do SAP:")
+  document.querySelector('#lotSap').textContent = lotSap.toUpperCase();
+});
+
+//______________________________________________________________
+
+const opSapClick = document.getElementById('opSapClick')
+
+opSapClick.addEventListener('click', (evt) => {
+  let opSap = prompt("Informe o Lote do SAP:")
+  document.querySelector('#opSap').textContent = opSap.toUpperCase();
+});
